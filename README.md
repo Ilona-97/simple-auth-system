@@ -4,14 +4,14 @@ This is a [Next.js](https://nextjs.org) project of simple authorization system m
 
 ## How to set up project locally:
 0. Requirements: Node.js, MySQL, npm
-1. Start MySQL (XAMPP)
-2. Create new database 'nextauth_db'
-3. Create table 'users' - you can use '/scripts/schema.sql'
-4. Insert test user to the table:
+1. Clone repository.
+2. Open the '.env.example' file, rename it to '.env' and replace `USER` and `PASSWORD` in your `.env` file with your actual MySQL credentials. You also need to remember to generate secret and put it in the right place there.
+3. Start MySQL (XAMPP). Create new database 'nextauth_db'
+4. Create table 'users' - you can use '/scripts/schema.sql'
+5. Insert test user to the table:
 ```bash
-node scripts/create_user.js
+node scripts/create-user.js
 ```
-5. Open the '.env.example' file and rename it to '.env' and replace `USER` and `PASSWORD` in your `.env` file with your actual MySQL credentials. You also need to remember to put your generated secret in the right place there.
 6. After cloning the repository, install all required Node.js packages:
 ```bash
 npm install
